@@ -1,8 +1,6 @@
 import streamlit as st
 
-st.title("test")
-
-teksti=st.text_input("Ju lutem shenoni tekstin tuaj ",)
+teksti=st.text_input("Ju lutem shenoni tekstin tuaj ")
 
 def conv_list(teksti):
     teksti_conv=teksti.split()
@@ -20,7 +18,7 @@ else:
 
 def conv_lower(lista):
     lower=[]
-    for i in lista:
+    for i in lista:     
         lower.append(i.lower)
     print(lower)
 lista_lower = print(conv_lower(lista))
